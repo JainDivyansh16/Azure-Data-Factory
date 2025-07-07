@@ -1,0 +1,22 @@
+{
+	"name": "SourceGit",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Azure-Data-Factory/refs/heads/main/2010-12-08.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
