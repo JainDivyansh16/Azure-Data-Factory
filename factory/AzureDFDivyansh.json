@@ -1,0 +1,9 @@
+{
+	"name": "AzureDFDivyansh",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "70609099-2c5f-487f-ae4c-9c54779db2c9",
+		"tenantId": "fccfa119-833a-4191-811b-98cf9b672f0d"
+	}
+}
