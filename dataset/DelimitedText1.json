@@ -1,16 +1,18 @@
 {
-	"name": "SourceGit",
+	"name": "DelimitedText1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "GitLinkedService",
+			"referenceName": "likedserviceDL",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "JainDivyansh16/Azure-Data-Factory/refs/heads/main/2010-12-08.csv"
+				"type": "AzureBlobFSLocation",
+				"fileName": "gitSinkCsvFile1",
+				"folderPath": "csvFiles",
+				"fileSystem": "destination"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
