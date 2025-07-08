@@ -1,0 +1,25 @@
+{
+	"name": "Reporting_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "likedserviceDL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Fact_Sales_1.csv",
+				"folderPath": "csvFiles",
+				"fileSystem": "reporting"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
