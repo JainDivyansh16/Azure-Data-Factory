@@ -1,0 +1,29 @@
+{
+	"name": "PipelineThree",
+	"properties": {
+		"activities": [
+			{
+				"name": "SettingVariable_Y",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Variable_Y",
+					"value": [
+						""
+					]
+				}
+			}
+		],
+		"variables": {
+			"Variable_Y": {
+				"type": "Array"
+			}
+		},
+		"annotations": []
+	}
+}
