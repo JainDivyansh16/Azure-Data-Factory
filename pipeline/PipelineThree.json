@@ -48,7 +48,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@variables('Variable_Y')",
+									"value": "@item().value",
 									"type": "Expression"
 								},
 								"ifFalseActivities": [
