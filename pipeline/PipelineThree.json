@@ -62,6 +62,24 @@
 											"value": "2020"
 										}
 									}
+								],
+								"ifTrueActivities": [
+									{
+										"name": "Multiplyby2",
+										"type": "SetVariable",
+										"dependsOn": [],
+										"policy": {
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"variableName": "MultiplyBy2",
+											"value": [
+												""
+											]
+										}
+									}
 								]
 							}
 						}
@@ -71,6 +89,9 @@
 		],
 		"variables": {
 			"Variable_Y": {
+				"type": "Array"
+			},
+			"MultiplyBy2": {
 				"type": "Array"
 			}
 		},
