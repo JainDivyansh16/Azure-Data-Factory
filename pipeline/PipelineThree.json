@@ -14,8 +14,28 @@
 				"typeProperties": {
 					"variableName": "Variable_Y",
 					"value": [
-						""
+						1,
+						2,
+						3,
+						4,
+						5
 					]
+				}
+			},
+			{
+				"name": "variableLoop",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "SettingVariable_Y",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": true
 				}
 			}
 		],
