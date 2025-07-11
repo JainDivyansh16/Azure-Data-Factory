@@ -35,19 +35,17 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@variables('Variable_Y')",
+						"type": "Expression"
+					},
 					"isSequential": true,
 					"activities": [
 						{
 							"name": "If Condition1",
 							"type": "IfCondition",
 							"dependsOn": [],
-							"userProperties": [],
-							"typeProperties": {
-								"expression": {
-									"value": "@item()",
-									"type": "Expression"
-								}
-							}
+							"userProperties": []
 						}
 					]
 				}
