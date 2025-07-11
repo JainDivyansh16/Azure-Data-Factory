@@ -45,7 +45,36 @@
 							"name": "If Condition1",
 							"type": "IfCondition",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@item()",
+									"type": "Expression"
+								},
+								"ifFalseActivities": [
+									{
+										"name": "Append variable1",
+										"type": "AppendVariable",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"variableName": "Variable_Y",
+											"value": ""
+										}
+									}
+								],
+								"ifTrueActivities": [
+									{
+										"name": "Wait1",
+										"type": "Wait",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"waitTimeInSeconds": 2
+										}
+									}
+								]
+							}
 						}
 					]
 				}
