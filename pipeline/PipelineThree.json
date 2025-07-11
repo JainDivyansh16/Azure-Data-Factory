@@ -75,9 +75,10 @@
 										"userProperties": [],
 										"typeProperties": {
 											"variableName": "MultiplyBy2",
-											"value": [
-												""
-											]
+											"value": {
+												"value": "@mul(item(),2)",
+												"type": "Expression"
+											}
 										}
 									}
 								]
