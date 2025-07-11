@@ -51,18 +51,6 @@
 									"value": "@greater(item(),0 )",
 									"type": "Expression"
 								},
-								"ifFalseActivities": [
-									{
-										"name": "Append variable1",
-										"type": "AppendVariable",
-										"dependsOn": [],
-										"userProperties": [],
-										"typeProperties": {
-											"variableName": "Variable_Y",
-											"value": "2020"
-										}
-									}
-								],
 								"ifTrueActivities": [
 									{
 										"name": "Multiplyby2",
@@ -74,9 +62,9 @@
 										},
 										"userProperties": [],
 										"typeProperties": {
-											"variableName": "MultiplyBy2",
+											"variableName": "e",
 											"value": {
-												"value": "@mul(item(),2)",
+												"value": "@mul(item(), 2)",
 												"type": "Expression"
 											}
 										}
@@ -94,6 +82,9 @@
 			},
 			"MultiplyBy2": {
 				"type": "Array"
+			},
+			"e": {
+				"type": "Integer"
 			}
 		},
 		"annotations": []
